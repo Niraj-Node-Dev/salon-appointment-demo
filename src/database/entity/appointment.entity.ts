@@ -2,7 +2,7 @@ import { Entity, Column, ManyToOne } from 'typeorm';
 import { Base } from './base';
 import { UserEntity } from './user.entity';
 import { SalonEntity } from './salon.entity';
-import { ServiceTypeEntity } from './service.entity';
+import { ServiceTypeEntity } from './service-type.entity';
 import { BarberEntity } from './barber.entity';
 
 @Entity('appointments')

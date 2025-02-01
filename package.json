@@ -20,7 +20,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "typeorm": "node -r tsconfig-paths/register -r ts-node/register ./node_modules/typeorm/cli.js",
     "migration:generate": "pnpm run typeorm migration:generate ./src/database/migrations/$FOR -d ./src/database/connection/index.ts",
-    "migration:up": "pnpm run typeorm migration:run -d ./src/database/connection/index.ts"
+    "migration:up": "pnpm run typeorm migration:run -d ./src/database/connection/index.ts",
+    "seed": "ts-node ./src/database/seeds/seed.run.ts"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",

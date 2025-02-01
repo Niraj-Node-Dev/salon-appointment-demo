@@ -2,7 +2,7 @@ import { Entity, Column, OneToMany } from 'typeorm';
 import { Base } from './base';
 import { BarberEntity } from './barber.entity';
 import { SalonHoursEntity } from './salon-hours.entity';
-import { ServiceTypeEntity } from './service.entity';
+import { ServiceTypeEntity } from './service-type.entity';
 
 @Entity('salons')
 export class SalonEntity extends Base {
